@@ -195,7 +195,7 @@ a {
 
 
   .cancel{
-    display: flex;
+    display: flex !important;
     justify-content: end;
     align-items: center;
     padding: 10px 10px 20px 0;
@@ -216,10 +216,11 @@ a {
     left: 0;
   }
 
-  .nav_social {
-    margin-top: -75px;
-    padding-top: 10px;
+  
+  .nav_social{
+    display: unset;
   }
+  
 
   .socialOne {
     padding: 15px 15px 15px 40px;
