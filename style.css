@@ -13,11 +13,11 @@ header {
   z-index: 1;
 }
 
-.cancel{
+.cancel {
   display: none !important;
 }
 
-.nav_social{
+.nav_social {
   display: none;
 }
 
@@ -180,6 +180,7 @@ a {
   }
 
   .nav_right {
+    z-index: 3;
     padding-top: 10px;
     width: 100%;
     height: 100dvh;
@@ -193,34 +194,29 @@ a {
     transition: ease-in-out 200ms;
   }
 
-
-  .cancel{
+  .cancel {
     display: flex !important;
     justify-content: end;
     align-items: center;
     padding: 10px 10px 20px 0;
   }
 
-  .cancel>input{
+  .cancel > input {
     display: none !important;
   }
 
-  .cancel>#toggle:checked + .nav-right{
+  .cancel > #toggle:checked + .nav-right {
     display: none !important;
   }
-
-
 
   #toggle:checked + .nav_right {
     display: block !important;
     left: 0;
   }
 
-  
-  .nav_social{
+  .nav_social {
     display: unset;
   }
-  
 
   .socialOne {
     padding: 15px 15px 15px 40px;
@@ -242,17 +238,18 @@ a {
     gap: 10px;
   }
 
-.btn_01{
-  border-right: solid 1px;
-  padding-right: 10px;
-}
+  .btn_01 {
+    border-right: solid 1px;
+    padding-right: 10px;
+  }
 
-.btn_01>a, .btn_02>a{
-  color: #000;
-  font-weight: 400;
-  font-size: 1.3em;
-  text-transform: none;
-}
+  .btn_01 > a,
+  .btn_02 > a {
+    color: #000;
+    font-weight: 400;
+    font-size: 1.3em;
+    text-transform: none;
+  }
   .navLinks {
     padding-top: 20px;
     flex-direction: column;
@@ -271,8 +268,8 @@ a {
     padding-left: 10px;
   }
 
-
-  .navLinks > ul > li:nth-child(2) > a>i, .navLinks > ul > li:nth-child(3) > a>i{
+  .navLinks > ul > li:nth-child(2) > a > i,
+  .navLinks > ul > li:nth-child(3) > a > i {
     display: none !important;
   }
 
