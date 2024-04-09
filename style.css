@@ -12,10 +12,20 @@ header {
   width: 100%;
   z-index: 1;
 }
+
+.cancel{
+  display: none !important;
+}
+
+.nav_social{
+  display: none;
+}
+
 .logo {
   width: 600px;
   margin: auto;
 }
+
 .genLayout {
   width: 70%;
   margin: auto;
