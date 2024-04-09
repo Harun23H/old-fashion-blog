@@ -1,0 +1,324 @@
+@import url("https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&family=Tilt+Warp&display=swap");
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+header {
+  position: absolute;
+  background-color: #e6ded2;
+  position: fixed;
+  width: 100%;
+  z-index: 1;
+}
+.logo {
+  width: 600px;
+  margin: auto;
+}
+.genLayout {
+  width: 70%;
+  margin: auto;
+}
+
+nav {
+  justify-content: end;
+  position: relative;
+}
+
+#toggle,
+label {
+  display: none;
+}
+.innerNav {
+  position: relative;
+  width: 100%;
+  padding-block: 0.7rem;
+  border-top: 6px double;
+  border-bottom: 6px double;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+nav > i {
+  margin-right: 3rem;
+  font-size: 18px;
+}
+.navLinks {
+  display: flex;
+  position: relative;
+}
+
+a > i {
+  margin-left: -37px;
+  display: flex;
+  align-items: center;
+}
+.navLinks > ul,
+li,
+a {
+  list-style: none;
+  display: flex;
+  gap: 40px;
+  font-weight: 700;
+  text-decoration: none;
+  text-transform: uppercase;
+  font-size: 16px;
+  font-weight: 500;
+  color: black;
+}
+
+.dropD,
+.dropD_2 {
+  position: absolute;
+  padding: 25px 15px;
+  height: 30dvh;
+  top: 30px;
+  left: -2px;
+  background-color: #fcf0dc;
+  width: 1200px;
+  display: none;
+}
+
+.dropD_2 {
+  top: 30px;
+  left: -2px;
+}
+
+.dropD_2 > .col_2 {
+  width: 100%;
+}
+
+.drop_innerD {
+  display: flex;
+  justify-content: space-between;
+}
+
+.col_1 {
+  width: 160px;
+  background-color: #f8e9d2;
+}
+
+.col_1 > a {
+  padding-right: 20px;
+  display: flex;
+  flex-direction: column;
+  justify-content: end;
+  align-items: end;
+  width: 100%;
+  font-size: 0.9em;
+  padding-block: 8px;
+  text-transform: capitalize;
+}
+
+.col_1 > a:hover {
+  background-color: #84683b;
+}
+
+.col_2 {
+  width: 1000px;
+  display: grid;
+  grid-template-columns: auto auto auto auto;
+  gap: 20px;
+}
+
+.navLinks > ul > li:nth-child(2) > a:hover + .dropD {
+  display: block;
+}
+.navLinks > ul > li:nth-child(3) > a:hover + .dropD_2 {
+  display: block;
+}
+
+.card > img {
+  width: 97%;
+  height: 180px;
+  object-fit: cover;
+}
+
+.textSide {
+  font-size: 0.85em;
+  width: 100%;
+}
+
+@media only screen and (min-width: 320px) and (max-width: 600px) {
+  .navLinks {
+  }
+
+  #toggle {
+    display: none;
+  }
+
+  label {
+    font-size: 1.5em;
+    display: block;
+  }
+
+  .logo {
+    width: 100%;
+    padding: 0 10px;
+  }
+
+  .innerNav {
+    width: 100%;
+    padding: 0 10px;
+    padding-block: 0.3rem;
+  }
+
+  .genLayout {
+    width: 98%;
+    margin: auto;
+  }
+
+  .nav_right {
+    padding-top: 10px;
+    width: 100%;
+    height: 100dvh;
+    background-color: #e6ded2;
+    position: absolute;
+    top: -100px;
+    left: -100%;
+    right: 0;
+    display: flex;
+    flex-direction: column !important;
+    transition: ease-in-out 200ms;
+  }
+
+
+  .cancel{
+    display: flex;
+    justify-content: end;
+    align-items: center;
+    padding: 10px 10px 20px 0;
+  }
+
+  .cancel>input{
+    display: none !important;
+  }
+
+  .cancel>#toggle:checked + .nav-right{
+    display: none !important;
+  }
+
+
+
+  #toggle:checked + .nav_right {
+    display: block !important;
+    left: 0;
+  }
+
+  .nav_social {
+    margin-top: -75px;
+    padding-top: 10px;
+  }
+
+  .socialOne {
+    padding: 15px 15px 15px 40px;
+    display: flex;
+    align-items: center;
+    gap: 15px;
+  }
+
+  .socialOne > a {
+    margin-left: 20px;
+    text-decoration: none;
+    font-size: 1.2em;
+  }
+
+  .sign_in_and_reg {
+    display: flex;
+    padding-block: 20px;
+    justify-content: center;
+    gap: 10px;
+  }
+
+.btn_01{
+  border-right: solid 1px;
+  padding-right: 10px;
+}
+
+.btn_01>a, .btn_02>a{
+  color: #000;
+  font-weight: 400;
+  font-size: 1.3em;
+  text-transform: none;
+}
+  .navLinks {
+    padding-top: 20px;
+    flex-direction: column;
+    position: relative;
+  }
+
+  .navLinks > ul,
+  li,
+  a {
+    flex-direction: column;
+    font-size: 1.1em;
+    font-family: "Roboto", sans-serif;
+    font-weight: 700;
+    font-style: normal;
+    gap: 12px;
+    padding-left: 10px;
+  }
+
+
+  .navLinks > ul > li:nth-child(2) > a>i, .navLinks > ul > li:nth-child(3) > a>i{
+    display: none !important;
+  }
+
+  a {
+    text-transform: capitalize;
+    font-size: 0.9em;
+  }
+
+  .drop_innerD {
+    width: 130px;
+    margin-top: -15px;
+    background-color: transparent !important;
+  }
+
+  .drop_innerD > .col_1 > a {
+    font-size: 0.7em !important;
+    padding: 5px;
+    font-family: serif;
+  }
+
+  .drop_innerD > .col_2 {
+    display: none !important;
+  }
+
+  .dropD {
+    display: none !important;
+    position: unset;
+    padding: unset;
+    height: 100%;
+    top: unset;
+    left: unset;
+    background-color: transparent;
+    width: 130px;
+    display: block;
+  }
+
+  .dropD.drop_innerD > .col_1 {
+    display: none !important;
+  }
+
+  .dropD_2 {
+    display: none !important;
+  }
+
+  .col_1 > a {
+    padding-left: 10px;
+    justify-content: start;
+    align-items: start;
+    width: unset;
+    font-size: 0.9em;
+    padding-block: 8px;
+    text-transform: capitalize;
+  }
+  .navLinks > ul > li:nth-child(2) > a:hover + .dropD {
+    display: block !important;
+  }
+  .navLinks > ul > li:nth-child(3) > a:hover + .dropD_2 {
+    display: none;
+  }
+}
