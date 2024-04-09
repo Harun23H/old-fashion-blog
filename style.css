@@ -191,7 +191,7 @@ a {
     right: 0;
     display: flex;
     flex-direction: column !important;
-    transition: ease-in-out 200ms;
+    transition: ease-in-out 400ms;
   }
 
   .cancel {
