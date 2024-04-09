@@ -215,20 +215,31 @@ a {
   }
 
   .nav_social {
-    display: unset;
+    display: block;
+    margin-top: -64px;
   }
 
   .socialOne {
-    padding: 15px 15px 15px 40px;
-    display: flex;
+    padding: 15px 15px 15px 30px;
     align-items: center;
-    gap: 15px;
+    gap: 10px;
+    display: flex;
   }
 
   .socialOne > a {
-    margin-left: 20px;
+    width: 30px;
+    height: 30px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
     text-decoration: none;
-    font-size: 1.2em;
+  }
+
+  .socialOne > a > i {
+    font-size: 1.4em;
+    margin-left: -10px;
+  
+
   }
 
   .sign_in_and_reg {
