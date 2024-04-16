@@ -858,10 +858,6 @@ font-size: .7em;
   .section_1Coltwo {
     display: none;
   }
-
-
-
-
   #section_2 {
     padding: 0 10px;
     width: 100%;
@@ -889,13 +885,15 @@ font-size: .7em;
   
 
   #latest_articles{
+    border: solid 3px red;
     padding: 0 10px;
-    padding-bottom: 80px;
+    padding-bottom: 0px;
   }
   
   .latest_articles{
     width: 100%;
     flex-direction: column;
+    gap: 0px;
     height: 565dvh;
   }
   
@@ -925,6 +923,9 @@ font-size: .7em;
 
   .first{
     gap: 7px;
+  }
+  html, body{
+    overflow-x: hidden;
   }
 
 }
