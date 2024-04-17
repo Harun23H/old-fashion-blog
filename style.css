@@ -302,13 +302,12 @@ a {
   padding: 0 20px;
   width: 100%;
   background-color: #e6ded2;
-  padding-bottom: 80px;
+  padding-bottom: 40px;
 }
 
 .latest_articles {
   gap: 50px;
   display: flex;
-  height: 985px;
 }
 
 .sideA {
@@ -780,15 +779,25 @@ a {
   .colOne3_ {
     width: 100%;
   }
+
+
+  .colOne3_text > p {
+    font-size: 1em;
+    padding-bottom: 15px;
+  }
+  .typewrter{
+    padding-block: 30px;
+  }
   #latest_articles {
     padding: 0 10px;
     padding-bottom: 0px;
+    background-color: #e6ded2;
+    
   }
   .latest_articles {
     width: 100%;
     flex-direction: column;
     gap: 0px;
-    height: 565dvh;
   }
   .info_1 > a {
     font-size: .9em;
@@ -801,23 +810,12 @@ a {
   }
   
   .info_2 > p {
-    font-size: .9em;
+    font-size: 1em;
   }
 
-
-
-
-
-
-
-
-
-
-
-
-
-
-
+.news_info>p{
+  font-size: 1.1em;
+}
 
   .sideA {
     width: 100%;
