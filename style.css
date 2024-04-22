@@ -1022,12 +1022,13 @@ footer {
 
   .post {
     width: 100%;
+    padding: 0;
     margin: auto;
     margin-top: 5px;
   }
 
   .post > img {
-    width: 128.5px;
+    width: 125px;
   }
 
   .footerThree {
