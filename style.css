@@ -999,8 +999,11 @@ footer {
   }
 
   .footerTwo {
-    padding: 0 10px;
     width: 100%;
+  }
+
+  .profile{
+    padding: 0 10px;
   }
 
   .username > span {
@@ -1013,7 +1016,7 @@ footer {
 
   .profile > button {
     border: solid #000;
-    margin-right: 0px;
+    margin-right: 25px;
   }
 
   .profile > button > a {
@@ -1021,11 +1024,12 @@ footer {
   }
 
   .post {
-    margin-top: 5px;
+    margin-top: 15px;
+    margin-left: 10px;
   }
 
   .post > img {
-    width: 125px;
+    width: 120px;
   }
 
   .footerThree {
