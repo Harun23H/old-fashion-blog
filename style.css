@@ -975,21 +975,72 @@ footer {
     overflow-x: hidden;
   }
 
-  /* footer styling */
+  /* footer */
+
   footer {
     word-spacing: 100%;
-    padding: 30px 20px;
-    background-color: #e6ded2;
+    padding: 30px 0 30px 0;
   }
 
   .footer {
-    grid-template-columns: auto;
-    margin-left: -13px;
+    display: flex;
+    flex-direction: column;
+  }
+
+  .footerOne {
     width: 100%;
+    gap: 30px;
+    padding: 0 10px;
+  }
+
+  .footerOne > p {
+    font-size: 1em;
+    font-weight: 600;
+  }
+
+  .footerTwo {
+    padding: 0 10px;
+    width: 100%;
+  }
+
+  .username > span {
+    font-size: 1em;
+  }
+
+  .username > small {
+    font-size: 0.9em;
+  }
+
+  .profile > button {
+    border: solid #000;
+    margin-right: 0px;
+  }
+
+  .profile > button > a {
+    font-size: 1em;
+  }
+
+  .post {
+    width: 100%;
+    margin: auto;
+    margin-top: 5px;
+  }
+
+  .post > img {
+    width: 128.5px;
+  }
+
+  .footerThree {
+    padding: 0 10px;
   }
 
   .content {
     width: 100%;
-    padding-right: 10px;
+    padding-right: 0px;
+  }
+
+  .lineA > p {
+    font-size: 1em;
+    margin-left: -10px;
   }
 }
